@@ -1,0 +1,4 @@
+<app-child [pData]="sendData" (cData)="recievedData = $event"></app-child>
+<h1>{{recievedData}}</h1>
+<button (click)="sendToChild()">ParentTChild</button>
+<router-outlet></router-outlet>
